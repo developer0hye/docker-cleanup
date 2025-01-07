@@ -38,6 +38,20 @@ Use the `-y` flag to skip confirmation and immediately perform the cleanup:
 dockerclean -y
 ```
 
+### 🐳 **Prerequisite: Running Docker Without `sudo`**
+
+Before using **DockerClean**, ensure Docker commands can be executed **without requiring `sudo` privileges**.  
+
+If Docker commands like `docker ps` or `docker system prune` require `sudo`, follow the official Docker documentation to configure your user permissions:
+
+👉 [**Post-Installation Steps for Linux**](https://docs.docker.com/engine/install/linux-postinstall/)
+
+---
+
+⚠️ **Important:** Without completing this setup, you’ll need to run `dockerclean` with `sudo`, which may not work seamlessly with the tool.  
+
+**Ensure Docker runs without `sudo` for the best experience with DockerClean! 🚀**
+
 ---
 
 ## ⚠️ **Warning**
