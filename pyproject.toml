@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "docker-cleanup"
+version = "1.0.0"
+authors = [
+    { name = "Yonghye Kwon", email = "developer.0hye@gmail.com" },
+]
+description = "A CLI tool to clean all Docker resources quickly"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/developer0hye/docker-cleanup"
+
+[project.scripts]
+docker-cleanup = "dockerclean.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["dockerclean"]  # 소스 코드가 있는 디렉토리를 지정

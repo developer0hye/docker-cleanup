@@ -1,4 +1,4 @@
-# 🐳 **DockerClean**  
+# 🐳 **docker-cleanup**  
 
 **A CLI tool to clean all Docker resources (containers, images, volumes, networks, caches) with a single command.**
 
@@ -6,10 +6,10 @@
 
 ## 📦 **Installation**
 
-To install DockerClean from PyPI, run:
+To install docker-cleanup from PyPI, run:
 
 ```bash
-pip install dockerclean
+pip install docker-cleanup
 ```
 
 Or, if you're installing locally from the source:
@@ -22,13 +22,13 @@ pip install .
 
 ## 🚀 **Usage**
 
-DockerClean provides a straightforward way to clean up Docker environments.
+docker-cleanup provides a straightforward way to clean up Docker environments.
 
 ### **Interactive Mode (with Confirmation)**  
 Run the command and confirm the cleanup manually:  
 
 ```bash
-dockerclean
+docker-cleanup
 ```
 
 - After running the command, you'll be prompted to confirm the cleanup:  
@@ -44,12 +44,12 @@ This mode is ideal when you want to review the operation before execution.
 Use the `-y` flag to skip confirmation and immediately perform the cleanup:  
 
 ```bash
-dockerclean -y
+docker-cleanup -y
 ```
 
 ### 🐳 **Prerequisite: Running Docker Without `sudo`**
 
-Before using **DockerClean**, ensure Docker commands can be executed **without requiring `sudo` privileges**.  
+Before using **docker-cleanup**, ensure Docker commands can be executed **without requiring `sudo` privileges**.  
 
 If Docker commands like `docker ps` or `docker system prune` require `sudo`, follow the official Docker documentation to configure your user permissions:
 
@@ -57,9 +57,9 @@ If Docker commands like `docker ps` or `docker system prune` require `sudo`, fol
 
 ---
 
-⚠️ **Important:** Without completing this setup, you’ll need to run `dockerclean` with `sudo`, which may not work seamlessly with the tool.  
+⚠️ **Important:** Without completing this setup, you’ll need to run `docker-cleanup` with `sudo`, which may not work seamlessly with the tool.  
 
-**Ensure Docker runs without `sudo` for the best experience with DockerClean! 🚀**
+**Ensure Docker runs without `sudo` for the best experience with docker-cleanup! 🚀**
 
 ---
 
@@ -96,7 +96,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE)
 
 ## 🤝 **Support**
 
-If you encounter any issues, please open an issue on [GitHub](https://github.com/yourusername/dockerclean).  
+If you encounter any issues, please open an issue on [GitHub](https://github.com/0hye/docker-cleanup).  
 
 Enjoy cleaner Docker environments! 🐳✨
 
