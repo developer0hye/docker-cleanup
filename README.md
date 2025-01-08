@@ -31,6 +31,15 @@ Run the command and confirm the cleanup manually:
 dockerclean
 ```
 
+- After running the command, you'll be prompted to confirm the cleanup:  
+  ```
+  ⚠️ This will delete all Docker data (containers, images, volumes, networks). Are you sure? (yes/no):
+  ```
+- **Type `yes`** to proceed with the cleanup.  
+- **Type `no`** to cancel the operation.
+
+This mode is ideal when you want to review the operation before execution.
+
 ### **Non-Interactive Mode (Skip Confirmation)**  
 Use the `-y` flag to skip confirmation and immediately perform the cleanup:  
 
